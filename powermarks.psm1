@@ -4,6 +4,9 @@ $marksPath = "$scriptDir\powermarks.csv"
 
 if (test-path $marksPath) {
     import-csv $marksPath | %{$marks[$_.key]=$_.value}
+} else {
+    $marks = @{"home" = $home}
+    $marks.getenumerator() | export-csv $marksPath -notype
 }
 
 function j($name) {
