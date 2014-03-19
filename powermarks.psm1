@@ -1,6 +1,6 @@
 $marks = @{}
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-$marksPath = "$scriptDir\poshmarks.csv"
+$marksPath = "$scriptDir\powermarks.csv"
 
 if (test-path $marksPath) {
     import-csv $marksPath | %{$marks[$_.key]=$_.value}
