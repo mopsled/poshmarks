@@ -39,7 +39,7 @@ function jd($name) {
 function usage() {
     Write-Host
     Write-Host "  js <name> - Saves the current directory as `"name`""
-    Write-Host "  j  <name> - Go to directory with jumpmark `"name`""
-    Write-Host "  jd <name> - Delete jumpmark `"name`""
-    Write-Host "  jl        - List jumpmarks"
+    Write-Host "  j  <name> - Jump to directory with powermark `"name`""
+    Write-Host "  jd <name> - Delete powermark `"name`""
+    Write-Host "  jl        - List powermarks"
 }
